@@ -1,0 +1,62 @@
+.logoutModal {
+  width: 300px;
+  height: 300px;
+  background: rgba(13, 13, 13, 0.89);
+  border-radius: 2rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 99999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  border-radius: 0.45rem;
+  animation: modal ease-in 0.4s;
+  .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-gap: 1rem;
+    .btn {
+      width: 1/1;
+      padding: 0.34rem;
+      text-align: center;
+      border-radius: 0.15rem;
+      cursor: pointer;
+      color: #fff;
+      font-weight: 500;
+
+      &.yes{
+        background-color: $skin3;
+      }
+
+      &.no{
+        background-color:#fff;
+       
+        color:#000;
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes modal{
+    from{
+        top:-100%;
+    }
+
+    to{
+        top:50%;
+    }
+}

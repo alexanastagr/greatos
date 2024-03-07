@@ -1,0 +1,92 @@
+.glassform {
+  
+  background: rgba(13, 13, 13, 0.797);
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    button,
+    input {
+      width: 100%;
+      height: 45px;
+      outline: none;
+      border: none;
+      text-align: center;
+      border-radius: 0.45rem;
+    }
+
+    input {
+      background: rgba(13, 13, 13, 0.517);
+      color: #fff;
+
+      &::placeholder {
+        color: rgb(108, 108, 108);
+      }
+    }
+
+    button {
+      background-color: $primary;
+      color: #ffffff;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .errormsg {
+    width: 100%;
+    height: 35px;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+
+    &.error {
+      background-color: rgba(208, 55, 55, 0.865);
+    }
+    &.success {
+      background-color: rgba(55, 208, 129, 0.865);
+    }
+  }
+
+  &.error {
+    animation: horizontal-shaking ease-in-out 0.3s;
+  }
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

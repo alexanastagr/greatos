@@ -1,0 +1,132 @@
+$iconSize: 50px;
+
+.desktopScreen {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+
+  // background images
+  &.bg1 {
+    background-image: url(../bg/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.bg2 {
+    background-image: url(../bg/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.bg3 {
+    background-image: url(../bg/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  // desktop icons
+  .icons {
+    padding-top: 5vh;
+    padding-left: 1vw;
+    flex-direction: column;
+    position: absolute;
+
+    // icon area
+
+    .iconarea {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 1rem;
+      color: #ffffff;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 0.15rem;
+      .icon {
+        width: $iconSize;
+        height: $iconSize;
+        background-color: rgb(255, 255, 255);
+
+        // icon images
+        &.About {
+          background: url(../../assets/icons/about.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Weather {
+          background: url(../../assets/icons/weather.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Calculator {
+          background: url(../../assets/icons/calculator.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Photos {
+          background: url(../../assets/icons/photos.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Music {
+          background: url(../../assets/icons/music.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Settings {
+          background: url(../../assets/icons/settings.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Games {
+          background: url(../../assets/icons/games.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Tasks {
+          background: url(../../assets/icons/tasks.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+
+        &.Browser {
+          background: url(../../assets/icons/browser.png);
+          background-size: $iconSize $iconSize;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .text {
+        margin-top: 10px;
+        font-size: 0.8rem;
+      }
+
+      &:hover {
+        padding: 0.15rem;
+        background-color: rgba(129, 129, 129, 0.266);
+      }
+
+      &:active {
+        padding: 0.15rem;
+        background-color: rgba(129, 129, 129, 0.266);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "./typo.scss";
+
+// Screens
+@import "./parts/screens/login";
+@import "./parts/screens/desktop";
+
+// Components
+@import "./components/glassform";
+@import "./components/taskbar";
+
+// Windows
+@import "./components/windows/about";
+@import "./components/windows/tasks";
+@import "./components/windows/settings";
+@import "./components/windows/calculator";
+
+@import "./components/helper";
+@import "./components/modals";
+@import './components/calendar';

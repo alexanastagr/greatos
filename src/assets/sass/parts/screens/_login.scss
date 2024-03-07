@@ -1,0 +1,28 @@
+.loginScreen {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../../assets/bg/auth.jpg);
+  background-size: cover;
+
+  .container {
+    width: 80vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+}
+
+
+@media screen and (min-width:600px) {
+    .loginScreen .container{
+        width: 400px;
+        height: 550px;
+    }
+}

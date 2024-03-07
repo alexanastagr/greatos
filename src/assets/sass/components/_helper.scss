@@ -1,0 +1,71 @@
+/* helper float button */
+
+.float {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+.popup-help-login {
+  background-color: rgb(255, 255, 255);
+  width: 80vw;
+  height: 65vh;
+  border-radius: 0.63rem;
+  position: absolute;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .icon {
+    color: $primary;
+  }
+  .title {
+    font-weight: 800;
+    font-size: 1.9rem;
+  }
+
+  .creds {
+    margin-top: 1rem;
+
+    strong {
+      color: $primary;
+    }
+  }
+}
+
+.btnexit {
+  padding: 0.54rem;
+  background-color: rgb(224, 224, 224);
+  color: #181818;
+  border-radius: 0.34rem;
+  margin-top: 50px;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .popup-help-login {
+    width: 400px;
+    height: 550px;
+    max-height: 550px;
+  }
+}

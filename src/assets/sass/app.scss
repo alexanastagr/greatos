@@ -1,0 +1,176 @@
+@import "./all";
+
+/**
+  Name:  GreatOS Design
+  Author:  Alexandros Anastasiadis
+  Website: https://alexanast.gr
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  font-weight: 300;
+  user-select: none;
+}
+
+a {
+  color: rgb(233, 233, 233);
+  font-weight: 800;
+}
+
+body {
+  background-color: rgb(18, 18, 18);
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+//window titlebar
+
+.titlebar {
+  width: 100%;
+  height: 40px;
+  background-color: #fffffffb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  top: 0;
+  color: #000000;
+  font-weight: 700;
+
+  // btn close
+  .close {
+    width: 40px;
+    height: 100%;
+    background-color: rgba(240, 92, 92, 0.728);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-top-right-radius: 1rem;
+    right: 0;
+    cursor: pointer;
+  }
+}
+
+// infomessages
+.infomsg {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &.offline {
+    background-color: rgb(205, 64, 64);
+  }
+
+  &.online {
+    background-color: rgb(64, 205, 149);
+  }
+}
+
+// skin colors
+
+[data-skin="skin1"] {
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+  .avatar::after {
+    background-color: $primary;
+    opacity: 0.4;
+  }
+
+  .start {
+    background-color: $primary;
+  }
+
+  .span {
+    color: $primary;
+  }
+
+  .cell:hover,
+  .cell:focus {
+    background-color: $primary;
+  }
+}
+
+// skin 2
+
+[data-skin="skin2"] {
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $skin2;
+  }
+  .avatar::after {
+    background-color: $skin2;
+    opacity: 0.4;
+  }
+
+  .start {
+    background-color: $skin2;
+  }
+
+  .evaluate-button {
+    color: #f5f5f5;
+    background: $skin2;
+  }
+
+  .span {
+    color: $skin2;
+  }
+
+  .cell:hover,
+  .cell:focus {
+    background-color: $skin2;
+  }
+}
+
+// skin 3
+
+[data-skin="skin3"] {
+  a {
+    color: #fff;
+  }
+
+  a:hover {
+    color: $skin3;
+  }
+  .avatar::after {
+    background-color: $skin3;
+    opacity: 0.4;
+  }
+
+  .start {
+    background-color: $skin3;
+  }
+
+  .evaluate-button {
+    color: #f5f5f5;
+    background: $skin3;
+  }
+
+  .span {
+    color: $skin3;
+  }
+
+  .cell:hover,
+  .cell:focus {
+    background-color: $skin3;
+  }
+}
